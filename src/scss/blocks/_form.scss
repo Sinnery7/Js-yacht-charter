@@ -1,0 +1,75 @@
+.feed-form {
+  &__items {
+    margin-top: 5px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 11px;
+    text-align: center;
+  }
+  &__wrapper {
+    margin-top: 24px;
+  }
+  &__guests {
+    margin-top: 27px;
+  }
+  &__services {
+    margin-top: 27px;
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+  &__items {
+    margin-top: 12px;
+  }
+  &__footer {
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+  &__price {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+  &__value {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .feed-form {
+    &__price {
+      font-size: 18px;
+    }
+    &__value {
+      font-size: 18px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .feed-form {
+    &__price {
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    &__value {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 1.45;
+    }
+  }
+}

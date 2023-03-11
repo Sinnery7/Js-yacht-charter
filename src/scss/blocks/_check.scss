@@ -1,0 +1,90 @@
+.check {
+  position: relative;
+  margin: 3px 0 13px 0;
+  &_checkbox {
+    margin: 13px 0;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &__label {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    line-height: normal;
+    &:before {
+      display: block;
+      z-index: 12;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      border: 2px solid $second-color;
+      border-radius: 50%;
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-right: 10px;
+      content: "";
+    }
+    &_checkbox {
+      &:before {
+        border-radius: unset;
+      }
+    }
+    &:after {
+      cursor: pointer;
+      opacity: 0;
+      background: $second-color;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(50%, -50%);
+      transition: all 0.2s;
+      margin: 0 auto;
+    }
+    &_checkbox {
+      &:after {
+        display: block;
+        width: 12px;
+        height: 12px;
+        transform: translate(35%, -50%);
+        background: url("../icons/check.svg") center center/cover no-repeat;
+      }
+    }
+  }
+}
+
+.check__input:checked+.check__label {
+  &:after {
+    opacity: 1;
+  }
+}
+
+.check-box__input:checked+.check-box__label {
+  &:after {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .check {
+    &__label {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .check {
+    &__label {
+      font-size: 12px;
+    }
+  }
+}
+

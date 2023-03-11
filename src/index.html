@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo_calc</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<section class="promo">
+  <div class="container">
+    <div class="promo__inner">
+      <img src="img/chuttersnap-zzF-MZYe.png" alt="yacht" class="promo__img">
+    </div>
+  </div>
+</section>
+
+<div class="modal">
+  <div class="modal__close" data-close>
+    <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>
+  </div>
+  <div class="modal__content">
+    <form action="#" class="feed-form">
+      <h2 class="title feed-form__title">Заполните форму</h2>
+      <div class="subtitle feed-form__subtitle">и получите расчет стоимости аренды яхты</div>
+      <div class="feed-form__wrapper">
+        <div class="feed-form__rent">
+          <div class="feed-form__description">1. Количество часов аренды</div>
+          <div class="feed-form__items">
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock1" value="3 часа">
+              <label class="check__label" for="clock1">
+                3 часа
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock2" value="5 часов">
+              <label class="check__label" for="clock2">
+                5 часов
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock3" value="1 день">
+              <label class="check__label" for="clock3">
+                1 день
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock4" value="1-2 дня">
+              <label class="check__label" for="clock4">
+                1-2 дня
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock5" value="2-3 дня">
+              <label class="check__label" for="clock5">
+                2-3 дня
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="clock" id="clock6" value="индивидуальный тур">
+              <label class="check__label" for="clock6">
+                индивидуальный тур
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="feed-form__guests">
+          <div class="feed-form__description">2. Количество гостей</div>
+          <div class="feed-form__items">
+            <div class="check">
+              <input class="check__input" type="radio" name="quest" id="quest1" value="до 7">
+              <label class="check__label" for="quest1">
+                до 7
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="quest" id="quest2" value="до 10">
+              <label class="check__label" for="quest2">
+                до 10
+              </label>
+            </div>
+            <div class="check">
+              <input class="check__input" type="radio" name="quest" id="quest3" value="больше 10">
+              <label class="check__label" for="quest3">
+                больше 10
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="feed-form__services">
+          <div class="feed-form__description">3. Дополнительные услуги</div>
+          <div class="feed-form__items">
+            <div class="check check_checkbox">
+              <input class="check__input check__input_checkbox" name="servicesCheckbox" type="checkbox" id="services1" value="повар на яхте">
+              <label class="check__label check__label_checkbox" for="services1">
+                повар на яхте
+              </label>
+            </div>
+            <div class="check check_checkbox">
+              <input class="check__input check__input_checkbox" name="servicesCheckbox" type="checkbox" id="services2" value="бармен на яхте">
+              <label class="check__label check__label_checkbox" for="services2">
+                бармен на яхте
+              </label>
+            </div>
+            <div class="check check_checkbox">
+              <input class="check__input check__input_checkbox" name="servicesCheckbox" type="checkbox" id="services3" value="музыкант на яхте">
+              <label class="check__label check__label_checkbox" for="services3">
+                музыкант на яхте
+              </label>
+            </div>
+            <div class="check check_checkbox">
+              <input class="check__input check__input_checkbox" name="servicesCheckbox" type="checkbox" id="services4" value="фото и видео съемка">
+              <label class="check__label check__label_checkbox" for="services4">
+                фото и видео съемка
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="feed-form__footer">
+          <div class="feed-form__price">Стоимость аренды:</div>
+          <div class="feed-form__value">0 РУБ</div>
+          <button class="button">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
